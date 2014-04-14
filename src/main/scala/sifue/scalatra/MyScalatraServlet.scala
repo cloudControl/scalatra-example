@@ -15,7 +15,7 @@ class MyScalatraServlet extends ScalatraServlet with ScalateSupport {
         <strong>Hello world, I'm a Scala app running on cloudControl!</strong>
       <footer>
         Coming from the <a href="https://www.cloudcontrol.com/dev-center/Quickstart">Quickstart</a>?
-        Check out <a href="https://www.cloudcontrol.com/dev-center/Guides/Java/Scala">the explanation</a>.
+        Check out <a href="https://www.cloudcontrol.com/dev-center/Guides/Java/Scala%20-%20HelloWorld">the explanation</a>.
       </footer>
     </body>
     </html>
@@ -26,6 +26,6 @@ class MyScalatraServlet extends ScalatraServlet with ScalateSupport {
     findTemplate(requestPath) map { path =>
       contentType = "text/html"
       layoutTemplate(path)
-    } orElse serveStaticResource() getOrElse resourceNotFound() 
+    } orElse serveStaticResource() getOrElse resourceNotFound()
   }
 }
